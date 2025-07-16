@@ -1,0 +1,22 @@
+public class Main{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int []arr1= new int [n];
+        for( int i=0;i<n;i++){
+            arr1[i]= sc.nextInt();
+        }
+        System.out.print("Arrays"+Arrays.toString(arr1));
+        
+        int b= sc.nextInt();
+        int[] newa = new int[n + 1];
+       
+        newa[n]=b;
+        for(int i=0;i<n;i++){
+            newa[i]=arr1[i];
+        }
+        System.out.print("Arrays"+Arrays.toString(newa));
+        
+        
+    }
+}
